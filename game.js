@@ -90,7 +90,7 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
-        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'; //Ternary Operator
 
         if (classToApply === 'correct') {
             incrementScore(CORRECT_BONUS);
